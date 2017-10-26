@@ -18,11 +18,15 @@
   </li>
 </ul>
 
-<div class="back">
+<button (click)="DesplegarArray()" class="btn_show">{{status}}</button>
+<div *ngIf="ShowColors" class="back">
+  <h2>Colores</h2>
     <ul>
         <li *ngFor="let color of colores">
             {{color}}
         </li>
-      
     </ul> 
+    <form (submit)="AddColor(Color)">
+      <input #Color type="text" name="New Color" placeholder="New Color">
+    </form>
   </div>

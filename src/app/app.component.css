@@ -2,3 +2,10 @@
     background-color:#eeeeee;
     color: black;
 }
+.btn_show{
+    background-color:#eeeeee;
+    color: black;
+    background-color: gray;
+    display: block;
+    
+}
